@@ -32,7 +32,7 @@ Exchange is a custodial decentralized exchange platform where $SUNI is used to c
 
 Pool is a pool reward platform where $SUNI is used to create a pool where token holders can get reward from staking it. Current [implementation on Ethereum](https://github.com/yam-finance/yam-protocol/blob/master/contracts/distribution/YAMCOMPPool.sol) are common across defi projects(e.g. yam, based.money, etc). Sending information to synthetic platform in Polkadot ecosystem is considered. Subswap team will support $SUNI pool with Liquidity provider tokens so that liquidity providers can better participate in the community governance. 
 
-Governance is a mutation of Democracy module from Parity technologies' [Amir singh](https://github.com/4meta5), and it provides governance for liquidity providers, by liquidity providers, of liquidity providers. The difference from the original module will be `WhiteList` storages. The governance module will be used for whitelisting a pair or an asset registered in Exchange and Asset module respectively. Governance module will keep whitelisted asset or pair identifiers with passed referendum hash by the community so that token hodlers or newcomers can verify the legitamacy trustlessly. Subswap is a decentralized exchange with on-chain governance which automatically applies consequences with the proposal. Although there are DAOs that achieve governance with proposals recorded in a blockchain as a request. Subswap has [Democracy](https://github.com/paritytech/substrate/tree/master/frame/democracy) module made by [Amir](https://github.com/4meta5) to provide real automated result.
+Governance is a mutation of Democracy module from Parity technologies' [Amir singh](https://github.com/4meta5), and it provides governance for liquidity providers, by liquidity providers, of liquidity providers. The difference from the original module will be `WhiteList` storages. The governance module will be used for whitelisting a pair or an asset registered in Exchange and Asset module respectively. For example, on democracy's white_list() module function request, a proposal is generated for whitelisting an asset in the blockchain network after checking the asset exists in the asset module's storage. Governance module will keep whitelisted asset or pair identifiers with passed referendum hash by the community so that token hodlers or newcomers can verify the legitamacy trustlessly. Subswap is a decentralized exchange with on-chain governance which automatically applies consequences with the proposal. Although there are DAOs that achieve governance with proposals recorded in a blockchain as a request. Subswap has [Democracy](https://github.com/paritytech/substrate/tree/master/frame/democracy) module made by [Amir](https://github.com/4meta5) to provide real automated result.
 
 ### Ecosystem Fit 
 Subswap is the only Substrate project which [demoed](https://devpost.com/software/subswap-3oe6lm) with automated market maker with clear reference codes in 2020/09/30 on Devpost. Subswap community will support other upcoming legit parachains to make genuine market with Decentralized governance with the council who shares the value of trustlessness with technical innovation. 
@@ -92,11 +92,11 @@ From the experience of managing Korean Polkadot community, Hyungsuk found out th
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean |
-| 0c. | Testing Guide | Test codes will be provided and the | 
+| 0c. | Testing Guide | Test codes will be provided in test.rs in each module focusing on overflows | 
 | 1. | primitives | We will apply orml_trait in subswap blockchain to share data across modules |  
-| 2. | Substrate module: Asset | We will create a Substrate module that will... | 
-| 3. | Substrate module: Exchange | We will create a Substrate module that will... |  
-| 3. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 2. | Substrate module: Asset | We will create a Substrate module that will register assets following [PSP-1]() for interoperability | 
+| 3. | Substrate module: Exchange | We will create a Substrate module that will create automated market makers for two different assets rewarding liquidity providers solving overflows in Time Weighted Average Price(TWAP) calculation |  
+| 3. | Substrate chain | Modules Asset and Exchange of our custom chain will interact in such a way that UniswapV1 does with faster speed and integration with Polkadot browser extensions(e.g. Speckle browser extension) |  
 | 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Milestone 2 - Test XCMP module in Rococo testnet
@@ -104,20 +104,33 @@ From the experience of managing Korean Polkadot community, Hyungsuk found out th
 * **FTE:**  1
 * **Costs:** 0.75 BTC
 
+Rococo testnet has been launched and The team expects that Rococo will be opened for other parachain teams in the late december. To test interchain asset transfer and exchange, we expect to collaborate other parachain teams such as Subsocial, Plasm, etc. The project will be built in [substrate-cumulus-template]().
 
-### Milestone 3 - Test XCMP module in Rococo testnet
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean |
+| 0c. | Testing Guide | Test codes will be provided in test.rs in each module focusing on overflows | 
+| 1. | Substrate module: Pool | A module where the pool |  
+| 2. | Substrate module: Governance sets | There are bunch of modules(e.g. collectives, democracy, council, technical) to achieve governance. Subswap team will integrate |  
+| 3. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
+
+### Milestone 3 - Bring Crosschain Defi to Polkadot ecosystem
 * **Estimated Duration:** 3 months
 * **FTE:**  1
 * **Costs:** 0.75 BTC
 
-Rococo is expected to 
+IPO starts with th
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean |
 | 0c. | Testing Guide | Test codes will be provided and the | 
-| 1. | Substrate module: Asset |  |  
+| 1. | Primitives | Using |
+| 1. | Substrate module: Asset | |  
 | 2. | Substrate module: Exchange | We will create a Substrate module that will... |  
 | 3. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 | 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
