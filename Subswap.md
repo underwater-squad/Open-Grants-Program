@@ -6,18 +6,10 @@
 * **Proposer:** Hyungsuk Kang
 * **Payment Address:** bitcoin:18BV6ZBt2P6zZBVpF4C5wQ3KANDoiRzDB9
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up: 
 
 ### Overview
 
-Please provide the following:
-  * A brief description: Permissionless Value Exchange Protocol based on Substrate with decentralized governance
-  * Integration: AMM (Automated Market Making) DEX (Decentralized Exchange) for native substrate tokens replacing CEX operation with community governance
-  * Background: 
-      Hyungsuk: Hyungsuk likes Rust programming language and want to build a new software system based it. He has been working in blockchain field over 3 years as software developer. He is now trying to bring interchain connection between Terra and Polkadot working in Terraform labs.
-      Josh:  
 ### Project Details 
 
 Subswap aims to be the next generation of crypto exchange without a central organization without democracy. Subswap brings governance on the exchange that community members decide which asset is legit or not, exchange is available or not. Subswap's native currency is $SUNI and it will be used as the governance and on-chain activities.
@@ -50,8 +42,12 @@ Subswap is the only Substrate project which [demoed](https://devpost.com/softwar
 ### Legal Structure 
 No registered legal entity yet
 
-### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+### Team members
+
+- Hyungsuk: Hyungsuk likes Rust programming language and want to build a new software system based it. He has been working in blockchain field over 3 years as software developer. He is now trying to bring interchain connection between Terra and Polkadot working in Terraform labs.
+- Josh: 
+- Jacob:
+- Sanghyun: 
 
 ### Team Code Repos
 * https://github.com/orgs/underwater-squad/
