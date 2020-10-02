@@ -83,69 +83,50 @@ For each milestone:
 
 ### Milestone 1 — Run testnet to raise awareness of defi in Polkadot ecosystem in local communities
 * **Estimated Duration:** 3 months
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+* **FTE:**  3
+* **Costs:** 1.5 BTC
  
 From the experience of managing Korean Polkadot community, Hyungsuk found out that most korean community newcomers does not even know what defi is. They do not have Ethereum to test out how uniswap works. To introduce defi with faster user experience and governance and onboard future subswap community members and validators, Subswap team will make a dapp based on [substrate-frontend-template](https://github.com/substrate-developer-hub/substrate-front-end-template/find/master) with remote secured websocket connection from subswap local testnet. The testnet will have swap features and governance  
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean |
+| 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean explaining the overall operation and details on each runtime module with references|
 | 0c. | Testing Guide | Test codes will be provided in test.rs in each module focusing on overflows | 
 | 1. | primitives | We will apply orml_trait in subswap blockchain to share data across modules |  
-| 2. | Substrate module: Asset | We will create a Substrate module that will register assets following [PSP-1]() for interoperability | 
+| 2. | Substrate module: Asset | We will create a Substrate module that will register assets following [PSPs]() for interoperability | 
 | 3. | Substrate module: Exchange | We will create a Substrate module that will create automated market makers for two different assets rewarding liquidity providers solving overflows in Time Weighted Average Price(TWAP) calculation |  
-| 3. | Substrate chain | Modules Asset and Exchange of our custom chain will interact in such a way that UniswapV1 does with faster speed and integration with Polkadot browser extensions(e.g. Speckle browser extension) |  
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 4. | Substrate chain | Modules Asset and Exchange of our custom chain will interact in such a way that UniswapV1 does with faster speed and integration with Polkadot browser extensions(e.g. Speckle browser extension) |  
+| 5. | Discord server | A discord server for supporting questions from overall operations in subswap and future discussion channel for council for subswap |  
+| 6. | Docker | We will use a docker-compose.yml file from substrate-node-template to provide container |
 
 ### Milestone 2 - Test XCMP module in Rococo testnet
 * **Estimated Duration:** 3 months
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+* **FTE:**  3
+* **Costs:** 1.5 BTC
 
-Rococo testnet has been launched and The team expects that Rococo will be opened for other parachain teams in the late december. To test interchain asset transfer and exchange, we expect to collaborate other parachain teams such as Subsocial, Plasm, etc. The project will be built in [substrate-cumulus-template]().
+Rococo testnet has been launched and The team expects that Rococo will be opened for other parachain teams in the late december. To test interchain asset transfer and exchange, we expect to collaborate other parachain teams such as Subsocial, Plasm, etc. The project will be built in [substrate-parachain-template]().
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean |
+| 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean explaining governance and pool module with references|
 | 0c. | Testing Guide | Test codes will be provided in test.rs in each module focusing on overflows | 
-| 1. | Substrate module: Pool | A module where the pool |  
-| 2. | Substrate module: Governance sets | There are bunch of modules(e.g. collectives, democracy, council, technical) to achieve governance. Subswap team will integrate |  
-| 3. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-
-### Milestone 3 - Bring Crosschain Defi to Polkadot ecosystem
-* **Estimated Duration:** 3 months
-* **FTE:**  1
-* **Costs:** 0.75 BTC
-
-IPO starts with th
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | A gitbook documentation link on the operation of subswap and its functionality in English or Korean |
-| 0c. | Testing Guide | Test codes will be provided and the | 
-| 1. | Primitives | Using |
-| 1. | Substrate module: Asset | |  
-| 2. | Substrate module: Exchange | We will create a Substrate module that will... |  
-| 3. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
+| 1. | Substrate module: Pool | A module for staking reward platform which acts like [🍠 ](yam.finance), or UNI feature in uniswap |  
+| 2. | Substrate module: Governance sets | There are bunch of modules(e.g. collectives, democracy, council, technical) to achieve governance. Subswap team will integrate these modules with additon to whilisting features. Some modules can be mutated due to the council's or community members' decision. |  
+| 3. | Substrate module: Contract sets | There may be a contract module to provide addtional features to the registered asset within the subswap chain. If this increases the block finalization time, this module may be removed. |
+| 3. | Substrate chain | Pool module is expected to incentivize liquidity providers to earn $SUNI for governance, governance module sets with council will provide governance not only with tokens but also reputations. |  
+| 4. | Docker | We will use docker-compose.yml file in the substrate-node-template to provide container.|
 
 
 ### Community engagement
 
-A [medium]
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
+For milestone 1, it is expected to engage with local communities first with telegram [chat](https://t.me/PolkadotKR).
 
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
+For milestone 2, A medium article will be shared in the publication [here](https://medium.com/underwater-squad), and the progress will be shared in [discord](https://discord.com/channels/761602589585571860/761602590051270656).
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+Underwater squad will setup a software development company based in Seoul after the congress passes amendments regarding cryptocurrencies [here](http://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_S1W9V1R1K2Y5J1A5K3V1Z0L4X1H3W9). Subswap will solve the hardest problems to solve liquidity between crypto assets. 
 
 ## Additional Information :heavy_plus_sign: 
 Any additional information that you think is relevant to this application that hasn't already been included.
@@ -154,3 +135,8 @@ Possible additional information to include:
 * What work has been done so far?
 * Are there are any teams who have already contributed (financially) to the project?
 * Have you applied for other grants so far?
+
+Current working repo:
+[subswap node](https://github.com/underwater-squad/subswap-2.0.0)
+
+Hyungsuk has worked on setting up Prometheus and Grafana for polkadot/substrate with [B-harvest]().
