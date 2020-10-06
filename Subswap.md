@@ -46,7 +46,7 @@ Currently no registered legal entity - considering different jurisdictions
 ### Team members
 - Hyungsuk Kang is passionate about building new software based in Rust programming language. He has been working in blockchain field over 3 years as software developer - currently @ Terraform labs in Korea, working on connecting Terra & Polkadot. He has been an Polkadot Ambassador for over an year and attends frequent meetups/events in Seoul. 
 - Josh Han is an entrepreneur passionate about Decentralized Finance & DAOs. He has been working in the blockchain industry since 2017 and most recently researched governance models at the United Nations Project Office on Governance. Also a Polkadot Ambassador and Managing Partner @ DWM. 
-- Jacob:
+- Jacob Makarsky is a software engineer and entrepreneur passionate about blockchain technology. He has been trading crypto since 2017 and developing with blockchain since 2019, where he started his career as a summer intern at Loopring in Shanghai. Also a Partner @ DWM. 
 - Sanghyun: 
 
 ### Team LinkedIn Profiles
